@@ -62,7 +62,7 @@ def process_email_content(query: QueryObject):
         message_body = msg.get_payload()
     except Exception as e:
         logging.error(e)
-        return 'inputted email string is not in good format', 500
+        return 'inputted email string format is not valid, review log file for error details', 500
     email_sentiment = sentence_sentiment(message_body)
     email_is_fraud, per_org_list = detect_faud(message_body)
     return {'sentiment': email_sentiment,

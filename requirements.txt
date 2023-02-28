@@ -1,5 +1,6 @@
+torch
 transformers
-fuzzysearch
+fuzzywuzzy
 python-Levenshtein
 spacy
 fastapi
