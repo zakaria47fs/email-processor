@@ -1,0 +1,6 @@
+transformers
+fuzzysearch
+python-Levenshtein
+spacy
+fastapi
+uvicorn
